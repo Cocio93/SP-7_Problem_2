@@ -1,0 +1,18 @@
+<table class="table">
+    <thead>
+    <tr>
+        <th>Student Name</th>
+        <th>Basic Programming</th>
+        <th>Advanced Programming</th>
+        <th>DataBase Intro</th>
+        <th>Average</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="student in studentsInfo.students | average">
+        <td>{{student.name}}</td>
+        <td ng-repeat="grade in student.grades">{{grade.grade}}</td>
+        <td>{{student.average | currency:''}}</td>
+    </tr>
+    </tbody>
+</table>
