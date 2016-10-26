@@ -1,5 +1,4 @@
 <table class="table">
-    <thead>
     <tr>
         <th>Student Name</th>
         <th>Basic Programming</th>
@@ -7,7 +6,6 @@
         <th>DataBase Intro</th>
         <th>Average</th>
     </tr>
-    </thead>
     <tbody>
     <tr ng-repeat="student in studentsInfo.students | average">
         <td>{{student.name}}</td>
